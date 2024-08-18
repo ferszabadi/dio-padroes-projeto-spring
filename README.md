@@ -10,8 +10,8 @@ A partir do [projeto base](https://github.com/falvojr/lab-padroes-projeto-spring
 
 ## Tecnologias utilizadas
 
-1. Spring Boot: Framework para construção de aplicações Java.\
-2. Spring Data JPA: Facilita a implementação de repositórios para acesso a dados.\
-3. OpenFeign: Cliente HTTP para interações com APIs externas.\
+1. Spring Boot: Framework para construção de aplicações Java.
+2. Spring Data JPA: Facilita a implementação de repositórios para acesso a dados.
+3. OpenFeign: Cliente HTTP para interações com APIs externas.
 4. H2 Database: Banco de dados em memória para desenvolvimento e testes.
 
