@@ -1,13 +1,16 @@
 package one.digitalinnovation.gof.model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
 
 @Entity
-public class Cliente {
+public class Biblioteca {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
@@ -15,6 +18,16 @@ public class Cliente {
 	private String nome;
 	@ManyToOne
 	private Endereco endereco;
+	@OneToMany(mappedBy = "biblioteca")
+	private List<Livro> livros;
+
+	public List<Livro> getLivros() {
+		return livros;
+	}
+
+	public void setLivros(List<Livro> livros) {
+		this.livros = livros;
+	}
 
 	public Long getId() {
 		return id;
